@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>About | Anthony Lin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* Accordion + logo styling */
+      .accordion {
+        margin-top: 1.5em;
+      }
+
+      .logo-block {
+        text-align: center;
+        margin: 0.5em 0 0.85em 0;
+      }
+
+      .about-logo {
+        width: min(520px, 92%);
+        max-height: 130px;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+
+      details.accordion-item {
+        background: rgba(255,255,255,0.95);
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 14px;
+        box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+        overflow: hidden;
+      }
+
+      details.accordion-item + details.accordion-item {
+        margin-top: 1em;
+      }
+
+      details.accordion-item summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 1.1em 1.25em;
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        color: #787878;
+      }
+
+      details.accordion-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .summary-left {
+        flex: 1;
+      }
+
+      .accordion-title {
+        display: block;
+        font-size: 1.15em;
+        font-weight: 700;
+        margin-bottom: 0.35em;
+      }
+
+      .accordion-preview {
+        display: block;
+        font-size: 0.95em;
+        opacity: 0.85;
+        line-height: 1.55em;
+      }
+
+      .accordion-hint {
+        font-size: 0.9em;
+        font-weight: 600;
+        opacity: 0.7;
+        white-space: nowrap;
+        margin-top: 0.2em;
+      }
+
+      details.accordion-item[open] summary {
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+      }
+
+      .accordion-body {
+        padding: 1em 1.25em 1.25em 1.25em;
+      }
+
+      /* Contact section */
+      .contact-card {
+        text-align: center;
+        margin-top: 1.5em;
+      }
+
+      .contact-card .icons {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Top Navigation -->
+    <nav id="topnav">
+      <div class="inner">
+        <ul class="actions">
+          <li><a href="index.html" class="button small">Home</a></li>
+          <li><a href="about.html" class="button small active">About</a></li>
+          <li><a href="work.html" class="button small">Work</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+      <section class="reveal">
+        <header class="major">
+          <h2 class="section-title">About Me</h2>
+        </header>
+
+        <div class="accordion">
+
+          <!-- About Me -->
+          <details class="accordion-item hover-lift" open>
+            <summary>
+              <span class="summary-left">
+                <span class="accordion-title">About Me</span>
+                <span class="accordion-preview">
+                  I am a sophomore studying Electrical and Computer Engineering at Cornell University, with a strong focus on hardware systems, embedded development, and real-world integration.
+                </span>
+              </span>
+              <span class="accordion-hint">Expand</span>
+            </summary>
+            <div class="accordion-body">
+              <p>
+                My interests lie mainly with electronics, where I enjoy designing systems that move, sense, and interact with their environment.
+                My passion for electronics comes from my own computer business that I started in high school as a way to satisfy my curiosity about how systems work.
+              </p>
+              <p>
+                I am drawn to projects that require going from theory to physical systems. Whether that involves PCB design, sensor fusion,
+                or debugging electromechanical assemblies, I enjoy working hands-on and iterating until the system behaves reliably in the real world.
+              </p>
+            </div>
+          </details>
+
+          <!-- Cornell Cup Robotics -->
+          <div class="logo-block">
+            <img src="images/ccr.png" class="about-logo" alt="Cornell Cup Robotics" />
+          </div>
+
+          <details class="accordion-item hover-lift">
+            <summary>
+              <span class="summary-left">
+                <span class="accordion-title">Cornell Cup Robotics – Electrical Subteam Member</span>
+                <span class="accordion-preview">
+                  I work across multiple autonomous and semi-autonomous robotics platforms, focusing on electronics, sensing, and integration.
+                </span>
+              </span>
+              <span class="accordion-hint">Expand</span>
+            </summary>
+            <div class="accordion-body">
+              <p>
+                For the AR Kart project, I contributed to the design and fabrication of motor control and sensor PCBs for a racing kart platform with Ackermann steering.
+                My work focused on IMU and distance sensor integration, Kalman filtering for pose estimation, and stable real-time communication.
+              </p>
+              <p>
+                On the XRP Xplorer submersible project, I led sensor selection and system integration for underwater operation, evaluating pressure,
+                temperature, and water sampling sensors while accounting for waterproofing, signal integrity, and calibration.
+              </p>
+              <p>
+                I also contributed to the ISS MicroMimic project through servo-driven solar array actuation, internal wiring through rotating truss structures,
+                and supporting a 30 Hz telemetry pipeline into the XRP control system.
+              </p>
+            </div>
+          </details>
+
+          <!-- Cornell Engineering -->
+          <div class="logo-block">
+            <img src="images/cornelleng.png" class="about-logo" alt="Cornell Engineering AEP" />
+          </div>
+
+          <details class="accordion-item hover-lift">
+            <summary>
+              <span class="summary-left">
+                <span class="accordion-title">Cornell University – Lab and Teaching Assistant</span>
+                <span class="accordion-preview">
+                  I support students in lecture and lab environments covering nanoscience, MEMS, and advanced instrumentation.
+                </span>
+              </span>
+              <span class="accordion-hint">Expand</span>
+            </summary>
+            <div class="accordion-body">
+              <p>
+                I assist with laboratory instruction and hands-on training involving STM, AFM, and SEM for nanoscale imaging and analysis.
+                I also work with faculty to troubleshoot experimental setups and improve lab efficiency and learning outcomes.
+              </p>
+              <p>
+                This role strengthened my ability to explain complex concepts clearly, debug under time pressure,
+                and mentor students with diverse technical backgrounds.
+              </p>
+            </div>
+          </details>
+
+          <!-- Museum -->
+          <div class="logo-block">
+            <img src="images/museum.png" class="about-logo" alt="Johnson Museum of Art" />
+          </div>
+
+          <details class="accordion-item hover-lift">
+            <summary>
+              <span class="summary-left">
+                <span class="accordion-title">Herbert F. Johnson Museum of Art – Museum Intern</span>
+                <span class="accordion-preview">
+                  I supported public programs, guided tours, and curatorial work in a museum setting.
+                </span>
+              </span>
+              <span class="accordion-hint">Expand</span>
+            </summary>
+            <div class="accordion-body">
+              <p>
+                I assisted with hands-on workshops, visitor engagement, research, object labeling,
+                and collections management.
+              </p>
+              <p>
+                This experience strengthened my communication skills and reinforced the importance of clearly presenting complex ideas to diverse audiences.
+              </p>
+            </div>
+          </details>
+
+          <!-- Interests -->
+          <details class="accordion-item hover-lift">
+            <summary>
+              <span class="summary-left">
+                <span class="accordion-title">Interests and Involvement</span>
+                <span class="accordion-preview">
+                  Outside academics, I stay active through running and outdoor activities and maintain strong involvement in technical communities.
+                </span>
+              </span>
+              <span class="accordion-hint">Expand</span>
+            </summary>
+            <div class="accordion-body">
+              <p>
+                I enjoy endurance training as a way to build discipline and consistency, and I am currently training for the Buffalo Marathon in May 2026.
+              </p>
+              <p>
+                My long-standing interest in computers led me to serve as a Technology Advisor for the Cornell Computer Reuse Association,
+                where I help refurbish hardware and assist with troubleshooting and system configuration.
+              </p>
+              <p>
+                I am also involved with IEEE at Cornell, where I engage with peers, attend industry talks,
+                and stay connected with developments in electrical engineering.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Contact -->
+      <section class="reveal">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card hover-lift contact-card">
+          <ul class="icons">
+            <li>
+              <a href="mailto:al2595@cornell.edu" class="icon solid fa-envelope">
+                <span class="label">Email</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+19174190968" class="icon solid fa-mobile-alt">
+                <span class="label">Phone</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anthony-lin-b20693332/"
+                 class="icon brands fa-linkedin"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="actions special">
+            <li><a href="mailto:al2595@cornell.edu" class="button">Email</a></li>
+            <li><a href="tel:+19174190968" class="button">Phone</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/anthony-lin-b20693332/"
+                 class="button"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <ul class="copyright">
+          <li>&copy; Anthony Lin</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/effects.js"></script>
+
+  </body>
+</html>
